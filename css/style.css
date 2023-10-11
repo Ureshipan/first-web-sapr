@@ -13,6 +13,7 @@ p {
 
 a {
     text-decoration:none;
+    color:black;
 }
 
 .logo {
@@ -22,11 +23,34 @@ a {
     text-decoration-line: none;
 }
 
+.members {
+    color: wheat;
+}
+
+.links {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color:black;
+    list-style-type: none;
+}
+
+.terms-text {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
 .zag {
     color: black;
     font-family: Playfair Display;
     font-style: normal;
     font-weight: 900;
+}
+
+.z-0 {
+    color: wheat;
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 4.8rem;
 }
 
 .z-1 {
@@ -51,7 +75,16 @@ a {
     font-weight: 800;
 }
 
-.custom-button {
+.confirmation-text-n {
+    color: white;
+}
+
+.confirmation-text-y {
+    color: var(--headline-color);
+    font-weight: 500;
+}
+
+.custom-link-btn {
     font-size: 1.1rem;
     font-weight: 800;
     line-height: 1.3rem;
@@ -65,5 +98,13 @@ a {
 .white-btn {
     color: var(--headline-color);
     background-color: white;
+}
+
+.join-btn {
+    color: white;
+    background-color: var(--headline-color);
+    font-size: 1.3rem;
+    font-weight: 900;
+    border: none;
 }
 
