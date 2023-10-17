@@ -5,13 +5,10 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-}
-
-p {
     font-size: 1.2rem;
 }
 
-a {
+.def-text-link {
     text-decoration:none;
     color:black;
 }
@@ -75,19 +72,20 @@ a {
     font-weight: 800;
 }
 
-.confirmation-text-n {
-    color: white;
-}
-
 .confirmation-text-y {
     color: var(--headline-color);
     font-weight: 500;
+
 }
 
 .custom-link-btn {
     font-size: 1.1rem;
     font-weight: 800;
     line-height: 1.3rem;
+    padding: 1rem;
+    border-color: var(--headline-color);
+    border-width: 0.3rem;
+    border-style:solid;
 }
 
 .green-btn {
@@ -106,5 +104,18 @@ a {
     font-size: 1.3rem;
     font-weight: 900;
     border: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
