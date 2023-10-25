@@ -41,6 +41,20 @@ body {
 
 .members {
     color: wheat;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+}
+
+.mem-name {
+    color: wheat;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
 }
 
 .links {
