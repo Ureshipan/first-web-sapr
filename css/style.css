@@ -132,9 +132,10 @@ body {
     background-image: url("../imgs/bgs/street.png");
     background-size: 100%;
     background-repeat: no-repeat;
-    min-height:17rem;
     text-align: center;
     max-height: 55rem;
+    padding-top:4rem;
+    padding-bottom: 4rem;
 }
 
 .zag {
@@ -175,7 +176,6 @@ body {
     line-height: 2.9rem;
     text-align: center;
     color:white;
-    padding-top:4rem;
 }
 
 .simple-headline-color-text {
