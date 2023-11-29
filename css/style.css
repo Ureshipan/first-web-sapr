@@ -28,15 +28,13 @@ body {
     text-decoration: none;
     display: inline;
     position: relative;
-    margin-left: -4rem;
+    top: 0.7rem;
 }
 
 .logo-img {
-    width: 8.4rem;
-    height: 4.2rem;
+    width:4rem;
     position: relative;
-    top: 1.5rem;
-    left: -2rem;
+    top: 0.8rem;
 }
 
 .pre-mem-wrap {
@@ -104,7 +102,7 @@ body {
     list-style-type: none;
     line-height: 1.9rem;
     padding-left: 0;
-    padding-right: 5rem;
+    margin-right: 5rem;
 }
 
 .terms-text {
@@ -130,7 +128,7 @@ body {
 }
 
 .sec2 {
-    background-image: url("../imgs/bgs/street.png");
+    background-image: url("../imgs/bgs/street.webp");
     background-size: 100%;
     background-repeat: no-repeat;
     text-align: center;
@@ -219,7 +217,6 @@ body {
 }
 
 .sign-up-btn {
-    margin-top: 2rem;
     width: 40%;
     box-shadow: 2px 2px 2px black;
 }
@@ -351,5 +348,7 @@ body {
 
 .flex {
     display: flex;
+    
+    margin-top: 2rem;
     justify-content: space-between;
 }
