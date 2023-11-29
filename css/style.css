@@ -158,6 +158,11 @@ body {
     line-height: 4.6rem;
     position: absolute;
     top: -8.5rem;
+    background: linear-gradient(180deg, #0B2349 33%, var(--headline-color) 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
 }
 
 .z-2 {
@@ -216,6 +221,7 @@ body {
 .sign-up-btn {
     margin-top: 2rem;
     width: 40%;
+    box-shadow: 2px 2px 2px black;
 }
 
 .lern-btn {
