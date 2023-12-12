@@ -1,6 +1,7 @@
 :root {
     font-size: 62.5%;
     --headline-color: #4BA87D;
+    --back-color: #CAEAC7;
 }
 
 html {
@@ -35,12 +36,6 @@ body {
     width:4rem;
     position: relative;
     top: 0.8rem;
-}
-
-.pre-mem-wrap {
-    max-width: 22rem;
-    margin: 0 auto;
-    margin-bottom: 5rem;
 }
 
 .members {
@@ -110,18 +105,37 @@ body {
     font-weight: 700;
 }
 
-.sec1 {
-    position: relative;
-    /*top: -12.2rem;*/
+
+@media (max-width: 400px) {
+    .sec1 {
+        position: relative;
+        /*top: -12.2rem;*/
+    }
+
+    .sec1-img {
+        width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.5rem;
+    }
 }
 
-.sec1-img {
-    width:100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 8.5rem;
+@media (min-width: 400px) {
+    .sec1 {
+        position: relative;
+        /*top: -12.2rem;*/
+    }
+
+    .sec1-img {
+        width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8.5rem;
+    }
 }
+
 
 .sec1-btn {
     width: 40%;
@@ -156,10 +170,6 @@ body {
     line-height: 4.6rem;
     position: absolute;
     top: -8.5rem;
-    background: linear-gradient(180deg, #0B2349 33%, var(--headline-color) 66%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #0B2349;
     display: table;
 }
 
@@ -218,7 +228,6 @@ body {
 
 .sign-up-btn {
     width: 40%;
-    box-shadow: 2px 2px 2px black;
 }
 
 .lern-btn {
@@ -275,24 +284,81 @@ body {
     overflow: hidden;
 }
 
-.cartochki {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+.card-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
 }
 
-.left-card {
-    max-width: 60%;
-    align-self: flex-start;
-    background-color: white;
-    margin-top: 3rem;
+@media (max-width: 600px){
+    .pre-mem-wrap {
+        max-width: 22rem;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    .cartochki {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--back-color);
+        margin-bottom: 5rem;
+    }
+
+    .left-card {
+        max-width: min(60%, 260px);
+        align-self: flex-start;
+        background-color: white;
+        margin-top: 3rem;
+        margin-left: 3%;
+        padding-bottom: 2rem;
+    }
+
+    .right-card {
+        max-width: min(60%, 260px);
+        align-self: flex-end;
+        background-color: white;
+        margin-top: 1rem;
+        margin-right: 3%;
+        padding-bottom: 2rem;
+    }
 }
 
-.right-card {
-    max-width: 60%;
-    align-self: flex-end;
-    background-color: white;
-    margin-top: 1rem;
+@media (min-width: 600px){
+    .pre-mem-wrap {
+        max-width: 22rem;
+        align-self: flex-end;
+        margin-bottom: 5rem;
+    }
+
+    .cartochki {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: var(--back-color);
+        margin-bottom: 5rem;
+    }
+
+    .left-card {
+        max-width: min(25%, 209px);
+        align-self: flex-start;
+        background-color: white;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .right-card {
+        max-width: min(25%, 209px);
+        align-self: flex-end;
+        background-color: white;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .card-img{
@@ -340,7 +406,7 @@ body {
 }
 
 .wrapper {
-    max-width: 300px;
+    max-width: 90%;
     margin: 0 auto;
     padding-inline: 1em;
     margin-bottom: 6rem;
