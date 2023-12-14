@@ -177,28 +177,6 @@ body {
     background-color: white;
 }
 
-.inp-forma {
-    border-radius: 5px;
-    border-color: darkgray;
-    border-style: solid;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-top: -1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.join-btn {
-    color: white;
-    background-color: var(--headline-color);
-    font-size: 1.3rem;
-    font-weight: 900;
-    border: none;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 50%;
-}
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -304,6 +282,13 @@ body {
         margin-bottom: 0;
     }
 
+    .post-mem-wrap {
+        max-width: min(25rem, 70%);
+        margin: 0 auto;
+        padding-inline: 1em;
+        margin-bottom: 3rem;
+    }
+
     .cartochki {
         display: flex;
         flex-direction: column;
@@ -398,11 +383,36 @@ body {
 
     .form-grid {
         display:grid;
-        grid-template-rows: [start] 3rem [mid] 3rem [end];
+        grid-template-rows: [start] 5rem [mid] 4rem [end];
+        justify-items: center;
     }
 
     .inp-email {
         grid-row: start / mid;
+    }
+
+    .inp-forma {
+        border-radius: 5px;
+        border-color: darkgray;
+        border-style: solid;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 22rem;
+        height: 4rem;
+        grid-row: start / mid;
+    }
+    
+    .join-btn {
+        color: white;
+        background-color: var(--headline-color);
+        font-size: 1.3rem;
+        font-weight: 900;
+        border: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 50%;
     }
 
     .wrapper {
@@ -410,7 +420,7 @@ body {
     margin: 0 auto;
     padding-inline: 1em;
     margin-bottom: 3rem;
-}
+    }
     
 }
 
@@ -546,6 +556,38 @@ body {
         padding-bottom: 1rem;
         display:inline-block;
         width: 20%;
+    }
+
+    .form-grid {
+        display:grid;
+        grid-template-columns: [start] 2fr [mid] 1fr [end];
+        justify-items: center;
+        
+        align-items: center;
+    }
+
+    .inp-forma {
+        border-radius: 5px;
+        border-color: darkgray;
+        border-style: solid;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 90%;
+        height: 4rem;
+        grid-column: start / mid;
+    }
+
+    .join-btn {
+        color: white;
+        background-color: var(--headline-color);
+        font-size: 1.3rem;
+        font-weight: 900;
+        border: none;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 90%;
     }
 
     .wrapper {
