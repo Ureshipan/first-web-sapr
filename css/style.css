@@ -1,5 +1,5 @@
 :root {
-    font-size: 62.5%;
+    font-size: 10px;
     --headline-color: #4BA87D;
     --back-color: #CAEAC7;
 }
@@ -220,6 +220,7 @@ body {
     padding-bottom: 5rem;
     background-color: var(--headline-color);
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .pick-btn {
@@ -234,7 +235,7 @@ body {
     padding-bottom: 1rem;
     display: inline-block;
     width: 131px;
-    }
+}
 
 .final-list {
     display: flex;
@@ -415,6 +416,11 @@ body {
         width: 50%;
     }
 
+    .lcolumn {
+        display:grid;
+        grid-template-rows: [fi] 7.5rem [se] 13.2rem [en];
+    }
+
     .wrapper {
     max-width: min(310px, 90%);
     margin: 0 auto;
@@ -424,7 +430,7 @@ body {
     
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 599px) and (max-width: 1299px){
     .logo-just {
         position:absolute;
         top: 2rem;
@@ -506,6 +512,7 @@ body {
         font-size: 3.6rem;
         line-height: 4.6rem;
         margin-top: 0;
+        margin-bottom: 0rem;
     }
 
     .sec1-text {
@@ -590,6 +597,12 @@ body {
         width: 90%;
     }
 
+    .lcolumn {
+        display:grid;
+        grid-template-columns: 12rem 12rem;
+        grid-template-rows: min-content;
+    }
+
     .wrapper {
         max-width: min(740px, 90%);
         margin: 0 auto;
@@ -599,5 +612,337 @@ body {
     
 }
 
+@media screen and (min-width: 1300px){
+    body {
+        font-size: 1.9rem;
+    }
+
+    .logo-just {
+        position:absolute;
+        top: 2rem;
+        left: calc((100% - min(90%, 1090px)) / 2);
+    }
+
+    .logo-text {
+        font-size: 3.5rem;
+        font-weight: 900;
+        color:black;
+        text-decoration: none;
+        display: inline;
+        position: relative;
+        top: 0rem;
+        left: 1rem
+    }
+    
+    .logo-img {
+        width:7rem;
+        position: relative;
+        top: 0.8rem;
+    }
+    
+
+    .punkts {
+        display: block;
+        text-decoration:none;
+        color:black;
+        font-size: 1.7rem;
+        font-weight: 800;
+        border-bottom: 5px solid var(--headline-color);
+        justify-self: flex-end;
+        margin-top: 1.5rem;
+        padding-bottom: 0;
+        height: 2.5rem;
+    }
+
+    .flex {
+        display: flex;
+        margin-top: 2rem;
+        justify-content: flex-end;
+        gap: 3%;
+    }
+
+    .sign-up-btn {
+        display: block;
+        width: 17rem;
+        height: 4rem;
+    }
+    
+    .custom-link-btn {
+        font-size: 1.7rem;
+        font-weight: 800;
+        line-height: 1.3rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-color: var(--headline-color);
+        border-width: 0.3rem;
+        border-style:solid;
+        text-align: center;
+    }
+
+    .pre-mem-wrap {
+        max-width: max(22rem, 30%);
+        align-self: flex-end;
+        margin-bottom: 5rem;
+    }
+
+    .post-mem-wrap {
+        max-width: min(90rem, 70%);
+        margin: 0 auto;
+        padding-inline: 1em;
+        margin-bottom: 14rem;
+    }
+
+    .cartochki {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        gap: 1em;
+    }
+
+    .left-card {
+        max-width: min(25%, 320px);
+        align-self: flex-start;
+        background-color: white;
+        margin-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .right-card {
+        max-width: min(25%, 320px);
+        align-self: flex-end;
+        background-color: white;
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+        padding-bottom: 2rem;
+    }
+
+    .front-grid {
+        display: grid;
+        grid-template-columns: [ts] min(49rem, 38%) [is] min(10rem, 10%) [te] min(72rem, 52%) [ie];
+        grid-template-rows: 315px;
+        align-items: center;
+    }
+
+    .sec1-img {
+        width: 100%;
+        grid-column-start: is;
+        grid-column-end: ie;
+        grid-row: 1;
+    }
+
+    .z-1 {
+        font-size: 5.9rem;
+        line-height: 7.1rem;
+        margin-top: 0;
+    }
+
+    .sec1-text {
+        grid-column-start: ts;
+        grid-column-end: te;
+        grid-row: 1;
+    }
+
+    .cent-btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    }
+    
+    .sec1-btn {
+        padding-top: 2.3rem;
+        width: 200px;
+        height: 65px;
+        font-size: 2.1rem;
+    }
+
+    .sec2 {
+        background-image: url("../imgs/bgs/street.webp");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        min-height: 50rem;
+        max-width: min(95rem, 80%);
+        padding-top:12rem;
+        padding-bottom: 4rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
+    .z-3 {
+        font-size: 6rem;
+        line-height: 8rem;
+        text-align: center;
+        color:white;
+    }
+
+    .lern-btn {
+        color: var(--headline-color);
+        background-color: white;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 900;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        display:inline-block;
+        width: 20%;
+        height: 65px;
+    }
+
+    .members {
+        color: white;
+        font-family: Raleway;
+        font-size: 1.9rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        margin-left: 2rem;
+        margin-top: 0;
+    }
+    
+    .mem-name {
+        color: white;
+        font-family: Raleway;
+        font-size: 3.4rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 40px;
+        margin-left: 2rem;
+        margin-bottom: 0;
+        
+    }
+    
+    .mem-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        max-width: min(1090px, 90%);
+        margin: 0 auto;
+    }
+    
+    .member-card {
+        background-size:cover;
+        background-repeat: no-repeat;
+        width: 34rem;
+        height: 24rem;
+        margin-bottom: 2rem;
+        padding-top: 13rem;
+        padding-bottom: 1rem;
+    }
+
+    .form-grid {
+        display:grid;
+        grid-template-columns: [start] 2fr [mid] 1fr [end];
+        justify-items: center;
+        
+        align-items: center;
+    }
+
+    .inp-forma {
+        border-radius: 5px;
+        border-color: darkgray;
+        border-style: solid;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 80%;
+        height: 6rem;
+        grid-column: start / mid;
+    }
+
+    .join-btn {
+        color: white;
+        background-color: var(--headline-color);
+        font-size: 2.1rem;
+        font-weight: 900;
+        border: none;
+        padding-top: 1rem;
+        width: 80%;
+        height: 6rem;
+    }
+
+    .z-2 {
+        font-size: 4.4rem;
+        line-height: 4rem;
+        text-align: left;
+    }
+    
+    .z-2-1 {
+        font-size: 4.4rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    .pre-foot {
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+        background-color: var(--headline-color);
+        margin-top: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .z-0 {
+        color: white;
+        font-size: 6rem;
+        text-align: center;
+        line-height: 4.8rem;
+    }
+
+    .pick-btn {
+        color: var(--headline-color);
+        text-align: center;
+        font-family: Raleway;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 1.05px;
+        background-color: white;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: inline-block;
+        width: 200px;
+    }
+
+    .final-list {
+        display: flex;
+        justify-content: center;
+    }
+
+    .lcolumn {
+        display:grid;
+        grid-template-columns: 14rem 14rem;
+        grid-template-rows: min-content;
+    }
+
+    .links {
+        font-size: 1.9rem;
+        font-weight: 700;
+        color:black;
+        list-style-type: none;
+        line-height: 1.9rem;
+        padding-left: 0;
+        margin-right: 5rem;
+    }
+
+    .terms-text {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .wrapper {
+        max-width: min(1090px, 90%);
+        margin: 0 auto;
+        padding-inline: 1em;
+        margin-bottom: 15rem;
+    }
+}
 
 
