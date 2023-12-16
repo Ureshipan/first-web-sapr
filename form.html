@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Kalnia&family=Noto+Sans+NKo+Unjoined&family=Oswald:wght@200&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Raleway:wght@500&family=Raleway:wght@700&family=Raleway:wght@800&family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+</head>
+<body>
+    <header class="wrapper">
+        <div class="flex">
+            <h1 class="sr-only">NinjaMail Main Page</h1>
+            <a href="#"  class="def-text-link logo-just">
+                <img src="imgs/logotip.png" alt="logo-img" class="logo-img">
+                <p class="logo-text">NinjaMail</p>
+            </a>
+            <a href="#" class="punkts">FEATURES</a>
+            <a href="#" class="punkts">PRICING</a>
+            <a href="#" class="punkts">SERVICES</a>
+            <a href="#" class="punkts">PARTNERS</a>
+            <a href="#" class="sign-up-btn green-btn custom-link-btn def-text-link">SIGN UP FREE</a>
+        </div>
+    </header>
+    <main class="form_section">
+        <form class="form" action="//httpbin.org/post" method="post">
+            <h1 class="form_title">Форма прикола</h1>
+            <fieldset class="form_div_wrapper"> 
+                <div class="form_group">
+                    <input type="text" class="form_input" placeholder="Иван" required >
+                    <label class="form_label">Имя*</label>
+                </div>
+                <div class="form_group">
+                    <input type="text" id="name" class="form_input" placeholder="Иванов" required  >
+                    <label class="form_label" for="#name">Фамилия*</label>
+                </div>
+                <div class="form_div_wrapper div_pol centr">
+                    <label for="" class="pol form_label">Пол*</label>
+                    <div>
+                        <input type="radio" class="form_radio" name="pol"><span> Женский </span>
+                    </div>
+                    <input type="radio" class="form_radio" name="pol"><span> Мужской</span>
+
+                </div>
+                <div class="form_group">
+                    <input id="date" type="date" class="date form_input">
+                    <label for="#date" class="form_label">Дата рождения*</label>
+                </div>
+            </fieldset>
+            <div class="form_div_wrapper">
+                <div class="form_group">
+                    <input type="email" class="form_input" placeholder="example@example.com" required >
+                    <label class="form_label">E-mail*</label>
+                </div>
+                <div class="form_group">
+                    <input type="tel" class="form_input" placeholder="+79999999999" required>
+                    <label class="form_label">Телефон*</label>
+                </div>
+                <div class="form_group">
+                    <input type="password" class="form_input" placeholder="Password" required>
+                    <label class="form_label">Пароль*</label>
+                </div>
+                <div class="form_group">
+                    <input type="password" class="form_input" placeholder="Password" required>
+                    <label class="form_label">Подтверждение пароля*</label>
+                </div>
+                <div class="form_div_wrapper">
+                    <label for=""  class="form_wrapper">Удобное время для связи:</label>
+                    <div class="time"> 
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"><span> 6:00 - 12:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>12:00 - 18:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>18:00 - 00:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>00:00 - 6:00 </span></p>
+                    </div>
+                </div>
+                <p class="card-text">* - обязательные для заполнения поля</p>
+            </div>
+            <!-- <p  class="form_wrapper"> 
+                <label for="">Time</label>
+                <input type="time" class="time">
+            </p> -->
+            <div class="form_div_button">
+                <button type="submit" class="form_button">Отправить</button>
+                <button type="reset" class="form_button">Сброс</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="wrapper nav">
+        <h2 class="sr-only">Закругление</h2>
+        <a href="#"  class="def-text-link">
+            <img src="imgs/logotip.png" alt="logo-img" class="logo-img">
+            <p class="logo-text">NinjaMail</p>
+        </a>
+        <section class="final-list sr-only">
+            <h2 class="sr-only">Ссылочки</h2>
+            <div class="lcolumn">
+                <ul class="links">
+                    <li><a href="#" class="def-text-link">Features</a></li>
+                    <li><a href="#" class="def-text-link">Pricing</a></li>
+                    <li><a href="#" class="def-text-link">Services</a></li>
+                    <li><a href="#" class="def-text-link">Partners</a></li>
+                </ul>
+                <ul class="links">    
+                    <li><a href="#" class="def-text-link">About Us</a></li>
+                    <li><a href="#" class="def-text-link">Tutorials</a></li>
+                    <li><a href="#" class="def-text-link">Resources</a></li>
+                    <li><a href="#" class="def-text-link">Help Center</a></li>
+                    <li><a href="#" class="def-text-link">Templates</a></li>
+                    <li><a href="#" class="def-text-link">Case Students</a></li>
+                </ul>
+            </div>
+            <div class="lcolumn">
+                <ul class="links">
+                    <li><a href="#" class="def-text-link">Medium</a></li>
+                    <li><a href="#" class="def-text-link">Twitter</a></li>
+                    <li><a href="#" class="def-text-link">Facebook</a></li>
+                    <li><a href="#" class="def-text-link">Instagram</a></li>
+                </ul>
+                <ul class="links">
+                    <li><a href="#" class="def-text-link">LinkedIn</a></li>
+                    <li><a href="#" class="def-text-link">Contact Us</a></li>
+                    <li><a href="#" class="def-text-link">Slack</a></li>
+                    <li><a href="#" class="def-text-link">Jobs</a></li>
+                </ul>
+            </div>
+        </section>
+        <a href="grid.html" class="terms-text">Гриды</a>
+        <a href="form.html" class="terms-text">Форма</a>
+        <p class="terms-text">NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights reserved.</p>
+        <a href="#" class="terms-text">Terms & Conditions</a>
+        <a href="#" class="terms-text">Privacy Policy</a>
+    </footer>
+</body>
+</html>
