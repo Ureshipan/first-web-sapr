@@ -31,64 +31,66 @@
     </header>
     <main class="form_section">
         <form class="form" action="//httpbin.org/post" method="post">
-            <h1 class="form_title">Форма прикола</h1>
-            <fieldset class="form_div_wrapper"> 
-                <div class="form_group">
-                    <input type="text" class="form_input" placeholder="Иван" required >
-                    <label class="form_label">Имя*</label>
-                </div>
-                <div class="form_group">
-                    <input type="text" id="name" class="form_input" placeholder="Иванов" required  >
-                    <label class="form_label" for="#name">Фамилия*</label>
-                </div>
-                <div class="form_div_wrapper div_pol centr">
-                    <label for="" class="pol form_label">Пол*</label>
-                    <div>
-                        <input type="radio" class="form_radio" name="pol"><span> Женский </span>
+            <h1 class="form_title">Subscribe to our prikol</h1>
+            <div class="form-grid">
+                <div class="form_div_wrapper"> 
+                    <div class="form_group">
+                        <input name="same" type="text" class="form_input" placeholder="Ryan" required >
+                        <label for="same" class="form_label">Name*</label>
                     </div>
-                    <input type="radio" class="form_radio" name="pol"><span> Мужской</span>
+                    <div class="form_group">
+                        <input name="surname" type="text" id="name" class="form_input" placeholder="Gosling" required  >
+                        <label class="form_label" for="surname">Surname*</label>
+                    </div>
+                    <div class="form_div_wrapper div_pol centr">
+                        <label for="" class="pol form_label">Sex*</label>
+                        <input type="radio" class="form_radio" name="female sex"><span> Female</span>
+                        <input type="radio" class="form_radio" name="male sex"><span> Male</span>
+                        <input type="radio" class="form_radio" name="other sex"><span> Other</span>
 
-                </div>
-                <div class="form_group">
-                    <input id="date" type="date" class="date form_input">
-                    <label for="#date" class="form_label">Дата рождения*</label>
-                </div>
-            </fieldset>
-            <div class="form_div_wrapper">
-                <div class="form_group">
-                    <input type="email" class="form_input" placeholder="example@example.com" required >
-                    <label class="form_label">E-mail*</label>
-                </div>
-                <div class="form_group">
-                    <input type="tel" class="form_input" placeholder="+79999999999" required>
-                    <label class="form_label">Телефон*</label>
-                </div>
-                <div class="form_group">
-                    <input type="password" class="form_input" placeholder="Password" required>
-                    <label class="form_label">Пароль*</label>
-                </div>
-                <div class="form_group">
-                    <input type="password" class="form_input" placeholder="Password" required>
-                    <label class="form_label">Подтверждение пароля*</label>
+                    </div>
+                    <div class="form_group">
+                        <input name="date of birth" id="date" type="date" class="date form_input">
+                        <label for="date of birth" class="form_label">Date of birth*</label>
+                    </div>
                 </div>
                 <div class="form_div_wrapper">
-                    <label for=""  class="form_wrapper">Удобное время для связи:</label>
+                    <div class="form_group">
+                        <input name="email" type="email" class="form_input" placeholder="example@example.com" required >
+                        <label for="email" class="form_label">E-mail*</label>
+                    </div>
+                    <div class="form_group">
+                        <input name="phone" type="tel" class="form_input" placeholder="+79999999999" required>
+                        <label for="phone" class="form_label">Phone number*</label>
+                    </div>
+                    <div class="form_group">
+                        <input name="pass" type="password" class="form_input" placeholder="Password" required>
+                        <label for="pass" class="form_label">Password*</label>
+                    </div>
+                    <div class="form_group">
+                        <input name="repeat pass" type="password" class="form_input" placeholder="Password" required>
+                        <label for="repeat pass" class="form_label">Repeat password*</label>
+                    </div>
+                    
+                </div>
+                <div class="form_div_wrapper conv-time-grid">
+                    <label for=""  class="form_wrapper">Convinient time for communication:</label>
                     <div class="time"> 
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"><span> 6:00 - 12:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>12:00 - 18:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>18:00 - 00:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub"> <span>00:00 - 6:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="time1"><span> 6:00 - 12:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="time2"> <span>12:00 - 18:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="time3"> <span>18:00 - 00:00 </span></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="time4"> <span>00:00 - 6:00 </span></p>
                     </div>
                 </div>
-                <p class="card-text">* - обязательные для заполнения поля</p>
             </div>
+            <p class="dop-text">* - required fields</p>
             <!-- <p  class="form_wrapper"> 
                 <label for="">Time</label>
                 <input type="time" class="time">
             </p> -->
             <div class="form_div_button">
-                <button type="submit" class="form_button">Отправить</button>
                 <button type="reset" class="form_button">Сброс</button>
+                <button type="submit" class="form_button">Отправить</button>
             </div>
         </form>
     </main>
@@ -132,8 +134,10 @@
                 </ul>
             </div>
         </section>
-        <a href="grid.html" class="terms-text">Гриды</a>
-        <a href="form.html" class="terms-text">Форма</a>
+        <div>
+            <a href="grid.html" class="terms-text">Гриды</a>
+            <a href="index.html" class="terms-text">Главная</a>
+        </div>
         <p class="terms-text">NinjaMail is a sample project for Quest AI. © 2019 Quest AI, All rights reserved.</p>
         <a href="#" class="terms-text">Terms & Conditions</a>
         <a href="#" class="terms-text">Privacy Policy</a>

@@ -3,21 +3,22 @@
     --back-color: #CAEAC7;
 }
 
-
+body {
+    font-family: 'Raleway', sans-serif;
+}
 
 .date[type = "date"],
 .time[type = "time"],
 .radio[type = "radio"]{
-    font-size: 16px;
+    font-size: 20px;
     color: black;
 }
 .form_input[type ="text"]{
-    font-size: 1.2em;
+    font-size: 15px;
 }
 input::placeholder {
     color: red;
-    font-size: 1em;
-    font-style: italic;
+    font-size: 1.2em;
 }
 .form_wrapper{
     font-size: 16px;
@@ -33,19 +34,25 @@ input::placeholder {
     padding: 40px 20px 20px 20px;
     margin: 10px 0;
 }
-.form_radio{
 
-}
 .time p:nth-child(even){
     color: gray;
 }
+.checked + span{
+    color: black;
+    font-size: 15px;
+}
 .checked:checked + span{
     color: var(--headline-color);
-    font-size: 13px;
+    font-size: 15px;
+}
+.form_radio + span{
+    color: black;
+    font-size: 20px;
 }
 .form_radio:checked + span{
     color: var(--headline-color);
-    font-size: 13px;
+    font-size: 20px;
 }
 .pol{
     text-align: center;
@@ -62,7 +69,6 @@ input::placeholder {
     width: 100%;
     height: 10rem;
     background-color: white;
-
 }
 .form_section{
     display: flex;
@@ -91,12 +97,12 @@ input::placeholder {
 .form_input{
     font-family: sans-serif;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .form_button{
     font-family: sans-serif;
     letter-spacing: 1px;
-    font-size: 16px;
+    font-size: 15px;
 }
 .form_div_button{
     display: flex;
@@ -107,7 +113,10 @@ input::placeholder {
 .form_title{
     text-align: center;
     margin: 0 0 32px 0;
-    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
 }
 .form_group{
     position: relative;
@@ -149,7 +158,17 @@ input::placeholder {
 
 .form_button:focus,
 .form_button:hover{
-    background-color: rgb(0, 113, 240, 0.7);
+    background-color: var(--back-color);
+    color: black;
+}
+
+.form-grid {
+    display: block;
+
+}
+
+.dop-text {
+    font-size: 15px;
 }
 
 /* .form_input:focus + .form_label,
@@ -159,4 +178,62 @@ input::placeholder {
     color: #e0e0e0;
 } */
 
-
+@media screen and (min-width: 1000px){
+    .wrapper {
+        max-width: min(1090px, 90%);
+        margin: 0 auto;
+        padding-inline: 1em;
+        margin-bottom: 5rem;
+    }
+    .nav{
+        position: fixed;
+        bottom: 0;
+        margin: 0 auto;
+        margin-bottom: 0;
+        max-width: 100%;
+        width: 100%;
+        height: 15rem;
+        background-color: white;
+    }
+    .form_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 15rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: var(--back-color);
+    }
+    .form-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .form{
+        width: 900px;
+        padding: 32px;
+        border-radius: 2px;
+        background-color: white;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+    }
+    .form_div_wrapper{
+        border: 2px solid var(--headline-color);
+        border-radius: 1px;
+        padding: 40px 20px 20px 20px;
+        margin: 10px 0;
+        width: 90%;
+        height: 90%;
+    }
+    .div_pol{
+        position: relative;
+        padding: 10px 0 20px 0;
+        margin-bottom: 15px;
+        border: none;
+        height: 50px;
+    }
+    .conv-time-grid {
+        grid-column: 1 / -1;
+        width: 95%;
+    }
+}
