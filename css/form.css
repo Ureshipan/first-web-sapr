@@ -13,14 +13,14 @@ body {
     font-size: 20px;
     color: black;
 }
-.form_input[type ="text"]{
+.form-input[type ="text"]{
     font-size: 15px;
 }
 input::placeholder {
     color: red;
     font-size: 1.2em;
 }
-.form_wrapper{
+.form-wrapper{
     font-size: 16px;
     margin: 20px 0;
 }
@@ -28,7 +28,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
 }
-.form_div_wrapper{
+.form-div-wrapper{
     border: 2px solid var(--headline-color);
     border-radius: 1px;
     padding: 40px 20px 20px 20px;
@@ -46,18 +46,18 @@ input::placeholder {
     color: var(--headline-color);
     font-size: 15px;
 }
-.form_radio + span{
+.form-radio + span{
     color: black;
     font-size: 20px;
 }
-.form_radio:checked + span{
+.form-radio:checked + span{
     color: var(--headline-color);
     font-size: 20px;
 }
 .pol{
     text-align: center;
 }
-.form_time_p{
+.form-time-p{
     margin: 5px 0;
 }
 .nav{
@@ -70,7 +70,7 @@ input::placeholder {
     height: 10rem;
     background-color: white;
 }
-.form_section{
+.form-section{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,29 +88,29 @@ input::placeholder {
     font-family: sans-serif;
     letter-spacing: 1px;
 }
-.div_pol{
+.div-pol{
     position: relative;
     padding: 10px 0 20px 0;
     margin-bottom: 15px;
     border: none;
 }
-.form_input{
+.form-input{
     font-family: sans-serif;
     letter-spacing: 1px;
     font-size: 15px;
 }
-.form_button{
+.form-button{
     font-family: sans-serif;
     letter-spacing: 1px;
     font-size: 15px;
 }
-.form_div_button{
+.form-div-button{
     display: flex;
     justify-content: center;
     justify-content: space-between;
 }
 
-.form_title{
+.form-title{
     text-align: center;
     margin: 0 0 32px 0;
     font-family: 'Raleway', sans-serif;
@@ -118,11 +118,11 @@ input::placeholder {
     font-size: 30px;
 
 }
-.form_group{
+.form-group{
     position: relative;
     margin-bottom: 32px;
 }
-.form_label{
+.form-label{
     position: absolute;
     top: -25px;
     color: var(--headline-color);
@@ -132,7 +132,7 @@ input::placeholder {
     width:100%;
     font-size: 18px;
 }
-.form_input{
+.form-input{
     width: 100%;
     border: none;
     border-bottom: 1px solid #e0e0e0;
@@ -141,10 +141,10 @@ input::placeholder {
     transition: 0.3s;
     padding-bottom: 5px;
 }
-.form_input:focus{
+.form-input:focus{
     border-bottom: 1px solid #1a73a8;
 }
-.form_button{
+.form-button{
     padding: 10px 20px;
     border: none;
     border-radius: 1px;
@@ -155,8 +155,8 @@ input::placeholder {
     transition: 0.3s;
 }
 
-.form_button:focus,
-.form_button:hover{
+.form-button:focus,
+.form-button:hover{
     background-color: var(--back-color);
     color: black;
 }
@@ -170,8 +170,8 @@ input::placeholder {
     font-size: 15px;
 }
 
-/* .form_input:focus + .form_label,
-.form_input:not(:placeholder-shown) + .form_label{
+/* .form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label{
     top: -18px;
     font-size: 12px;
     color: #e0e0e0;
@@ -194,7 +194,7 @@ input::placeholder {
         height: 15rem;
         background-color: white;
     }
-    .form_section{
+    .form-section{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -216,7 +216,7 @@ input::placeholder {
         font-family: sans-serif;
         letter-spacing: 1px;
     }
-    .form_div_wrapper{
+    .form-div-wrapper{
         border: 2px solid var(--headline-color);
         border-radius: 1px;
         padding: 40px 20px 20px 20px;
@@ -224,7 +224,7 @@ input::placeholder {
         width: 90%;
         height: 90%;
     }
-    .div_pol{
+    .div-pol{
         position: relative;
         padding: 10px 0 20px 0;
         margin-bottom: 15px;
