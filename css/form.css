@@ -130,7 +130,6 @@ input::placeholder {
     left: 0;
     text-align: center;
     width:100%;
-    transform: translate(-50% 0);
     font-size: 18px;
 }
 .form_input{
