@@ -235,4 +235,7 @@ input::placeholder {
         grid-column: 1 / -1;
         width: 95%;
     }
+    fieldset{
+        border-style: none;
+    }
 }
