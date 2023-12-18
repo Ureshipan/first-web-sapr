@@ -4,6 +4,31 @@
     --back-color: #CAEAC7;
 }
 
+p::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+h1::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+h2::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+h3::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+a::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+img::selection {
+    color: white;
+    background-color: var(--headline-color);
+}
+
 html {
     box-sizing: border-box;
     max-width: 100%;
@@ -18,9 +43,27 @@ body {
 }
 
 .def-text-link {
+    display:block;
     text-decoration:none;
     color:black;
+    transition: 0.3s;
 }
+
+.activ {
+    transition: 0.3s;
+}
+
+.activ:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: 0.3s;
+}
+
+.activ:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+
 
 .logo-text {
     font-size: 2.2rem;
@@ -193,6 +236,7 @@ body {
 
 
 .card-text {
+    display:block;
     padding-left: 2rem;
     padding-right: 2rem;
     margin-bottom: 2rem;
@@ -249,10 +293,122 @@ body {
     gap: 1.5%;
 }
 
+:focus {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--back-color);
+    transform: none;
+    transition: 0s;
+}
 
 .cart-bg {
         background-color: var(--back-color);
 }
+
+
+.div-loader{
+    position: relative;
+}
+
+@keyframes poyavilsya{
+    85%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes ischez{
+    80%{opacity: 1;}
+    90%{opacity: 0;}
+}
+
+#imposter{
+    opacity: 0;
+    animation: poyavilsya 8s forwards;
+}
+
+.loader {
+    width: 10%;
+    height: 10%;
+    border:10px solid #FFF;
+    border-radius: 50%;
+    position: absolute;
+    transform:rotate(45deg);
+    box-sizing: border-box;
+    top: 45%;
+    left: 45%;
+    animation: ischez 8s forwards;
+}
+/*
+.loader {
+    color: #fff;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    animation: mulShdSpin 1.3s infinite linear;
+    transform: translateZ(0);
+}
+*/
+.loader::before{
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    inset:-10px;
+    border-radius: 50%;
+    color: var(--back-color);
+    animation: mulShdSpin 1.5s infinite linear;
+}
+
+@keyframes mulShdSpin {
+    0%,
+    100% {
+    box-shadow: 0 -3em 0 0.2em, 
+    2em -2em 0 0em, 3em 0 0 -1em, 
+    2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 0;
+    }
+    12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 
+    3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+    }
+    25% {
+    box-shadow: 0 -3em 0 -0.5em, 
+    2em -2em 0 0, 3em 0 0 0.2em, 
+    2em 2em 0 0, 0 3em 0 -1em, 
+    -2em 2em 0 -1em, -3em 0 0 -1em, 
+    -2em -2em 0 -1em;
+    }
+    37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+    3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, 
+    -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+    3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, 
+    -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+    62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em,
+    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, 
+    -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+    75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 
+    3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+    87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 
+    3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
+    -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 600px){
     .logo-just {
         position:absolute;
@@ -599,7 +755,7 @@ body {
 
     .lcolumn {
         display:grid;
-        grid-template-columns: 12rem 12rem;
+        grid-template-columns: 14rem 14rem;
         grid-template-rows: min-content;
     }
 
@@ -918,7 +1074,7 @@ body {
 
     .lcolumn {
         display:grid;
-        grid-template-columns: 14rem 14rem;
+        grid-template-columns: 19rem 19rem;
         grid-template-rows: min-content;
     }
 

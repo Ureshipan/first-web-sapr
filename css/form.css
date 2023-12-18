@@ -239,3 +239,7 @@ input::placeholder {
         border-style: none;
     }
 }
+
+.brak-logo {
+    transform: scale(1.5) rotate(30deg) skewX(20deg) skewY(20deg);
+}
