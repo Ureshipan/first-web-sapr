@@ -175,7 +175,7 @@ body {
 
 .zag {
     color: black;
-    font-family: Playfair Display;
+    font-family: "Playfair Display";
     font-style: normal;
     font-weight: 900;
 }
@@ -504,7 +504,6 @@ body {
 
     .sec1-text {
         grid-area: ts/te;
-        align-self:te;
     }
 
     .sec1-img {
