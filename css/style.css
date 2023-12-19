@@ -42,6 +42,21 @@ body {
     font-size: 1.2rem;
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: black;
+    background: var(--back-color);
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
 .def-text-link {
     display:block;
     text-decoration:none;
@@ -407,6 +422,10 @@ body {
     3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, 
     -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
     }
+}
+
+.links li:nth-child(even) a {
+    color:grey;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px){
