@@ -429,7 +429,7 @@ body {
 }
 
 .links li:nth-child(even) a {
-    color:grey;
+    color:darkslategray;
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px){
