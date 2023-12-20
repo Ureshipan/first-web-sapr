@@ -55,6 +55,9 @@ body {
 
 .skip-link:focus {
     transform: translateY(20%);
+    position: absolute;
+    top: 2rem;
+    left: 
 }
 
 .def-text-link {
@@ -124,6 +127,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 8px;
 }
 
 .member-card {

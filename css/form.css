@@ -1,5 +1,5 @@
 ::root{
-    --headline-color: #4BA87D;
+    --headline-color: #3a9269;
     --back-color: #CAEAC7;
 }
 
@@ -16,7 +16,7 @@ body {
 .form-input[type ="text"]{
     font-size: 15px;
 }
-input::placeholder {
+input:required::placeholder {
     color: red;
     font-size: 1.2em;
 }

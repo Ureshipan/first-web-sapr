@@ -19,7 +19,7 @@
         <div class="flex">
             <h1 class="sr-only">NinjaMail Main Page</h1>
             <a href="#"  class="def-text-link logo-just">
-                <img src="imgs/logotip.png" alt="logo-img" class="logo-img">
+                <img src="imgs/logotip.png" alt="home link" class="logo-img">
                 <p class="logo-text">NinjaMail</p>
             </a>
             <a href="#" class="punkts">FEATURES</a>
@@ -33,55 +33,55 @@
         <form class="form" action="//httpbin.org/post" method="post">
             <h1 class="form-title">Subscribe to our prikol</h1>
             <div class="form-grid">
-                <div class="form-div-wrapper"> 
+                <fieldset class="form-div-wrapper" id="personal" name="personal"> 
                     <div class="form-group">
-                        <input name="same" type="text" class="form-input" placeholder="Ryan" required >
-                        <label for="same" class="form-label">Name*</label>
+                        <input name="name" id="name" type="text" class="form-input" placeholder="Ryan" required >
+                        <label for="name" class="form-label">Name*</label>
                     </div>
                     <div class="form-group">
-                        <input name="surname" type="text" id="name" class="form-input" placeholder="Gosling" required  >
+                        <input name="surname" id="surname" type="text" id="name" class="form-input" placeholder="Gosling" required  >
                         <label class="form-label" for="surname">Surname*</label>
                     </div>
                     <div class="form-div-wrapper div-pol centr">
-                        <label for="" class="pol form-label">Sex*</label>
                         <fieldset id="sex">
+                            <legend class="pol form-label">Sex</legend>
                             <input type="radio" class="form-radio" name="sex" value="female"><span> Female</span>
                             <input type="radio" class="form-radio" name="sex" value="male"><span> Male</span>
                             <input type="radio" class="form-radio" name="sex" value="other"><span> Other</span>
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <input name="date of birth" id="date" type="date" class="date form-input">
+                        <input name="date of birth" id="date of birth" type="date" class="date form-input">
                         <label for="date of birth" class="form-label">Date of birth*</label>
                     </div>
-                </div>
-                <div class="form-div-wrapper">
+                </fieldset>
+                <fieldset class="form-div-wrapper" id="contacts">
                     <div class="form-group">
-                        <input name="email" type="email" class="form-input" placeholder="example@example.com" required >
+                        <input name="email" id="email" type="email" class="form-input" placeholder="example@example.com" required >
                         <label for="email" class="form-label">E-mail*</label>
                     </div>
                     <div class="form-group">
-                        <input name="phone" type="tel" class="form-input" placeholder="+79999999999" required>
+                        <input name="phone" id="phone" type="tel" class="form-input" placeholder="+79999999999" required>
                         <label for="phone" class="form-label">Phone number*</label>
                     </div>
                     <div class="form-group">
-                        <input name="pass" type="password" class="form-input" placeholder="Password" required>
+                        <input name="pass" id="pass" type="password" class="form-input" placeholder="Password" required>
                         <label for="pass" class="form-label">Password*</label>
                     </div>
                     <div class="form-group">
-                        <input name="repeat pass" type="password" class="form-input" placeholder="Password" required>
+                        <input name="repeat pass" id="repeat pass" type="password" class="form-input" placeholder="Password" required>
                         <label for="repeat pass" class="form-label">Repeat password*</label>
                     </div>
                     
-                </div>
+                </fieldset>
                 <div class="form-div-wrapper conv-time-grid">
-                    <label for=""  class="form-wrapper">Convinient time for communication:</label>
-                    <div class="time"> 
-                        <p class="form-time-p"><input class="checked" type="checkbox" name="time1"><span> 6:00 - 12:00 </span></p>
-                        <p class="form-time-p"><input class="checked" type="checkbox" name="time2"> <span>12:00 - 18:00 </span></p>
-                        <p class="form-time-p"><input class="checked" type="checkbox" name="time3"> <span>18:00 - 00:00 </span></p>
-                        <p class="form-time-p"><input class="checked" type="checkbox" name="time4"> <span>00:00 - 6:00 </span></p>
-                    </div>
+                    <fieldset class="time" id="time svyazi"> 
+                        <legend class="form-wrapper">Convinient time for communication:</legend>
+                        <p class="form-time-p"><input class="checked" type="checkbox" name="time1" value="6:00 - 12:00"><span> 6:00 - 12:00 </span></p>
+                        <p class="form-time-p"><input class="checked" type="checkbox" name="time2" value="12:00 - 18:00"><span> 12:00 - 18:00 </span></p>
+                        <p class="form-time-p"><input class="checked" type="checkbox" name="time3" value="18:00 - 00:00"><span> 18:00 - 00:00 </span></p>
+                        <p class="form-time-p"><input class="checked" type="checkbox" name="time4" value="00:00 - 6:00"><span> 00:00 - 6:00 </span></p>
+                    </fieldset>
                 </div>
             </div>
             <p class="dop-text">* - required fields</p>
